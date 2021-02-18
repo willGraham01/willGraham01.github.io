@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Integrative Think Tank 7: Measuring and Predicting the Natural Environment</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Suplimentary_style.css">
+
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body>
+
+<!-- Navbar, generated from script at bottom of page -->
+<div w3-include-html="navbar.html"></div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu"><i class="fa fa-remove"></i></a>
+    <h4 class="w3-bar-item"><b>Page Navigation</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Times">Welcome</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Info">Information</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Presentations">Presentations</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="ITT8.html">ITT 8</a>
+	<div w3-include-html="sidebarSuppliment.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <!--Allow switching between II7 and 8, semester 1 and 2 -->
+    <div class="w3-center w3-padding-64">
+        <div class="w3-bar">
+            <a class="w3-button w3-hover-black" href="SLS_Sem1.html">SLS Semester 1 2017/18</a>
+            <a class="w3-button w3-black" href="ITT7.html">ITT 7</a>
+            <a class="w3-button w3-hover-black" href="SLS_Sem2.html">SLS Semester 2 2017/18</a>
+            <a class="w3-button w3-hover-black" href="ITT8.html">ITT 8</a>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="Welcome">Welcome</h1>
+            <p>
+        		Welcome to the webpage for ITT7, <q>Measuring and Predicting the Natural Environment</q>. This webpage will be updated throughout the week to include presentations given by Industrial Partners, Academics and Students; as well as the information handbook and other relevant information. We hope you enjoy the week!
+        	</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="Info">Information</h1>
+            <p>
+              A copy of the ITT7 handbook is available <a href="SLSResources/ITT7FullDoc.pdf" target="_blank">here</a>.
+              For a full list of participants, see <a href="SLSResources/ITT7Participants.pdf" target="_blank">this list</a>.
+              <br />
+              <br />  <b>Dates:</b> Monday 29th January - Friday 2nd February
+              <br />  <b>Location:</b> Bath Royal Literary and Scientific Institution <a href="https://brlsi.org/" target="_blank">(BRLSI)</a>, 16-18 Queen Square, Bath BA1 2HN. <a href="https://www.google.co.uk/maps/place/Bath+Royal+Literary+%26+Scientific+Institution/@51.3830333,-2.3646853,17z/data=!4m5!3m4!1s0x4871811458504b1b:0x5da38db64012c6af!8m2!3d51.3834016!4d-2.3642883" target="_blank">View on Map</a>
+              <br />  <b>Partners:</b> <a href="http://www.npl.co.uk/" target="_blank">National Physics Laboratory</a> and the <a href="https://www.gov.uk/government/organisations/environment-agency" target="_blank">Environment Agency</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="Presentations">Presentations</h1>
+            <p>
+        		Presentations given throughout the week are available here; colour co-ordinated by the person who gave them.
+        		<br /><font color="green">Green - Environment Agency talk</font>
+        		<br /><font color="#005BFB">Blue - National Physics Laboratory talk</font>
+        		<br /><font color="#FB0000">Red - Academic talk</font>
+        		<br /><font color="#FBA000">Orange - SAMBa Student talk</font>
+                <h5 class="w3-text-teal">View talks from:</h2>
+                <div class="w3-bar">
+                    <a class="w3-button w3-hover-black" href="ITT7.html#Mon">Monday</a>
+                    <a class="w3-button w3-hover-black" href="ITT7.html#Tues">Tuesday</a>
+                    <a class="w3-button w3-hover-black" href="ITT7.html#Wed">Wednesday</a>
+                    <a class="w3-button w3-hover-black" href="ITT7.html#Fri">Friday</a>
+                </div>
+        	</p>
+
+        	<b id="Mon">Monday</b>
+        	<p>
+        		<font color="#005BFB">Alistair Forbes - <a href="ITT7/AlistairForbesDataAssimilationSpectralAnalysis.pdf" target="_blank">Data Assimilation and Spectral Analysis</a></font>
+        		<br />	<font color="green">Sean Longfield - <a href="ITT7/SeanLongfieldTemporalSpatialChangeDetection.pdf" target="_blank">Temporal and Spacial Change Detection</a></font>
+        		<br />	<font color="green">Anita Asadullah - <a href="ITT7/AnitaAsadullahEstimatingFloods.pdf" target="_blank">Estimation of Design Floods in Small River Catchments</a></font>
+        		<br />	<font color="#FB0000">Ilaria Prosdocimi - <a href="ITT7/IlariaProsdocimiStatsDataFloodEst.pdf" target="_blank">Statistics and Data for Flood Estimation</a></font>
+        		<br />	<font color="#FB0000">Mark Opmeer - <a href="ITT7/MarkOpmeerSpectralAnalysis.pdf" target="_blank">Eigenvalues of Covariance Matrices</a></font>
+        		<br />	<font color="#FB0000">Emiko Dupont - <a href="ITT7/EmikoDupontGaussianProcesses.pdf" target="_blank">Gaussian Processes<a/></font>
+        		<br />	<font color="#FB0000">Dan Green - <a href="ITT7/DanGreenDataAssimilation.pdf" target="_blank">Data Assimiation</a></font>
+        	</p>
+
+        	<b id="Tues">Tuesday</b>
+        	<p>
+        		<font color="#005BFB">Peter Harris - <a href="ITT7/PeterHarrisSensorNetworkTopics.pdf" target="_blank">Sensor Networks</a></font>
+        		<br />	<font color="green">Natalie Phillips - <a href="ITT7/NataliePhillipsNVZs.pdf" target="_blank">Estimations of Nitrate Vulnerable Zones</a></font>
+        		<br />	<font color="#FB0000">Phil Trinh - <a href="ITT7/PhilTrinhGWFlowsPorousMedia.pdf" target="_blank">Models of Groundwater Fluid Flow<a/></font>
+            </p>
+
+        	<b id="Wed">Wednesday</b>
+        	<p>
+                <font color="#FBA000">
+                    Allen - <a href="ITT7/1Allen.pdf" target="_blank">Where Should the Sensors Go?</a>
+                    <br />  Lizhi - <a href="ITT7/2Lizhi.pdf" target="_blank">Source Identiforcation and Tracking</a>
+                    <br />  Stefano - <a href="ITT7/3Stefano.pdf" target="_blank">Small Catchments: Probabilistic Tree-Like Models</a>
+                    <br />  Yyanis - <a href="ITT7/4Yyanis.pdf" target="_blank">Physical Models for Nitrate Pollution</a>
+                    <br />  Barry - <a href="ITT7/5Barry.pdf" target="_blank">River Stream Flow: Clustering and Prediction</a>
+                    <br />  Teo - <a href="ITT7/6Teo.pdf" target="_blank">Rough Path Signature Methods for Time Series Data</a>
+                    <br />  Kevin - <a href="ITT7/7Kevin.pdf" target="_blank">What Kevin Said (Kevin: send me your title)</a>
+                    <br />  Matthias - <a href="ITT7/8Matthies.pdf" target="_blank">Spectral Analysis Associated with Gaussian Processes</a>
+                    <br />  Dorka - <a href="ITT7/9Dorka.pdf" target="_blank">Random Process in Random Media to Model Nitrate Flows</a>
+                    <br />  Emiko - <a href="ITT7/10Emiko.pdf" target="_blank">Detecting Non-Stationarity in Peak River Flows</a>
+                    <br />  Aoibheann - <a href="ITT7/11AB.pdf" target="_blank">Attribution of Changes in River Flows in the UK</a>
+                    <br />  Elizabeth - <a href="ITT7/12Liz.pdf" target="_blank">Nitrates, Boreholes and Geodistance</a>
+                </font>
+        	</p>
+
+        	<b id="Fri">Friday</b>
+        	<p>
+        		<font color="#FBA000">
+        				Teo & Momchil - <a href="ITT7/StudentPresentations/TeoSignatureModels.pdf" target="_blank">Signature Methods to Cluster Flow-Data</a>
+        		<br />	Kevin, Tom P & Owen - <a href="ITT7/StudentPresentations/KevinUncertaintySensors.pdf" target="_blank">Uncertainty in Acoustic Sensor Networks</a>
+        		<br />	Emiko, Robbie & Tom S - <a href="ITT7/StudentPresentations/EmikoNonStationarity.pdf" target="_blank">Non-Stationary in Peak River Flows</a>
+        		<br />	Aoibheann & Nadeen - <a href="ITT7/StudentPresentations/NadeenAttribution.pdf" target="_blank">Attribution of Changes in River Flows</a>
+        		<br />	Shaunagh & Will - <a href="ITT7/StudentPresentations/ShaunaghNitratePollution.pdf" target="_blank">Physical Models for Nitrate Pollution</a>. MP4 media available <a href="ITT7/StudentPresentations/ShaunaghVideo.mp4" target="_blank">here</a>
+        		<br />	Tom F - <a href="ITT7/StudentPresentations/TomFTrees.pdf" target="_blank">Small Catchments as Tree-Like Structures</a>
+        		<br />	Allen - <a href="ITT7/StudentPresentations/AllenSensorPlacement.pdf" target="_blank">Where Should the Sensors Go?</a>
+        		<br />	Barry & Abi - <a href="ITT7/StudentPresentations/BarryClusteringModelling.pdf" target="_blank">Clustering and Modelling of River Stream Flow</a>
+        		<br />	Lizhi - <a href="ITT7/StudentPresentations/LizhiSourceID.pdf" target="_blank">Source Identiforcation and Tracking</a>
+        		<br />	John - <a href="ITT7/StudentPresentations/JohnRandomEnvironments.pdf" target="_blank">Aquifers as Random Environments</a>
+        		<br />	Malena & Hanneke - <a href="ITT7/StudentPresentations/MalenaLiquideanDistance.pdf" target="_blank">Liquidean Distance</a>
+        		<br />	Dan G - <a href="ITT7/StudentPresentations/DanGSpectralToeplitz.pdf" target="_blank">Spectral Analysis of Toeplitz Matrices</a>
+        		</font>
+        	</p>
+        </div>
+    </div>
+
+    <footer id="myFooter">
+        <div class="w3-container w3-theme-l2">
+            <p>
+      	        EPSRC Centre for Doctorial Training in Statistical Applied Mathematics <a href="http://www.bath.ac.uk/math-sci/postgraduate/samba/">(SAMBa)</a>
+            </p>
+        </div>
+
+        <div class="w3-container w3-theme-l1">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+    </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Generate the navigation bar
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                    /*remove the attribute, and call this function once more:*/
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+        }
+    }
+};
+includeHTML();
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

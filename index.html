@@ -1,1 +1,204 @@
-Hello World
+<!DOCTYPE html>
+
+<html>
+
+<title>Will Graham's Homepage</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Suplimentary_style.css">
+
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body>
+
+<!-- Navbar, generated from script at bottom of page -->
+<div w3-include-html="navbar.html"></div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu"><i class="fa fa-remove"></i></a>
+    <h4 class="w3-bar-item"><b>Page Navigation</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#About">About Me</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#PersonalInfo">Personal Information</a>
+	<div w3-include-html="sidebarSuppliment.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal" id="About">About Me</h1>
+			<a href="https://researchportal.bath.ac.uk/en/persons/will-graham" target="_blank">My profile on PURE can be found here</a>. Here's a brief overview.
+			<h3 class="w3-text-teal">PhD Research</h3>
+			<p>
+				My PhD is concerned with the modelling (and development of supporting theory) of photonic crystal fibres (PCFs).
+				This involves the use of techniques from homogenisation theory and results on the convergence of thin-structure PDE problems to singular-structure ODE problems.
+				This is with the objective of providing an analytic model which can link the geometry and material properties of PCFs to its operating performance, to improve fibre design.
+				<br />My PhD supervisors are <a href="http://people.bath.ac.uk/kc525/" target="_blank">Dr Kirill Cherednichenko</a> (80%); <a href="https://researchportal.bath.ac.uk/en/persons/david-bird" target="_blank">Prof David Bird</a> (10%), and <a href="https://researchportal.bath.ac.uk/en/persons/chris-bowen" target="_blank">Prof Chris Bowen</a> (10%).
+			</p>
+			<h4 class="w3-text-teal">Publications and pre-prints</h4>
+			<p>
+				<ul>
+				  <li>[With <a href="http://people.bath.ac.uk/kc525/" target="_blank">Kirill Cherednichenko</a>] &nbsp Frequency-dependent impedance and surface waves on the boundary of a stratified dielectric medium. [<a href="https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.2019.0218" target="_blank">PTRS Open Access</a>] &nbsp [<a href="https://arxiv.org/abs/1802.06921" target="_blank">arXiv</a>].</li>
+				  <li> [MRes Thesis] &nbsp Exploratory Analysis of Wave Problems on Thin and Singular Structures. [<a href="Resources/William_Graham_ThesisFormulationReport.pdf" target="_blank">PDF</a>]. </li>
+				</ul>
+			</p>
+			<h4 class="w3-text-teal">Presentations and Talks</h4>
+			<p>
+				<ul>
+				  <li><a href="http://buc.cimat.mx/node/46" target="_blank">BUC-XVI</a>, Sept 2019 - <a href="Resources/BUC-XVI_Sept_2019.pdf">Photonic Fibres from Thin Structures</a></li>
+				  <li><a href="http://people.bath.ac.uk/kc525/Seminar/programme_current.html" target="_blank">Asymptotics, Operators, and Functionals</a> seminar series, Oct 2019 - <a href="Resources/AOOF_Seminar_Oct_2019.pdf">Photonic Fibres from Thin Structures</a></li>
+				</ul>
+			</p>
+			<h5 class="w3-text-teal">Academic Background</h5>
+			<p>
+                I graduated from the University of Bath in Summer 2017 with an MSci Mathematics and Physics, and I am now part of the 4th cohort of the <a href="http://www.bath.ac.uk/math-sci/postgraduate/samba/" target="_blank">SAMBa</a> CDT at the University of Bath.
+				I completed the MRes year of the SAMBa program in September 2018.
+			</p>
+            <h5 class="w3-text-teal">Teaching</h5>
+            <p>
+                <ul>
+					<li>I am a tutor for Analysis 1A/B at the Univeristy of Bath; tutorial resources for my tutor groups can be found on <a href="Tutoring.html">this page</a>.</li>
+                    <li>I am a demonstrator for the Univeristy of Bath's Doctorial College team, helping with the teaching of lessons in LaTeX and Python.</li>
+                    <li>I have been involved with developing (2018/19-2020/21), demonstrating (2018/19-2020/21), and organising (2020/21) the introductory courses in Python, MATLAB, R, and LaTeX for postgraduate induction in the Mathematical Sciences department.
+                    Resources for 2020/21's induction week can be found <a href="SAMBa_Induction.html">on this page</a>.</li>
+                </ul>
+            </p>
+			<h5 class="w3-text-teal">Other Involvements</h5>
+			<p>
+				<ul>
+					<li>I was involved in the running of the <a href="SLS_Sem1.html">Student-Lead Symposium</a> in 2017/18.</li>
+					<li>I participated in SAMBa's 7th and 8th Integrative Think Tanks (ITTs) in January and June of 2018, material from the ITTs <a href="ITT7.html">is available here</a>.</li>
+					<li>I participated in SAMBa's 9th and 10th ITTs in January and June of 2019.</li>
+					<li>I was one of 5 SAMBa students co-organising the SAMBa Summer Conference in July 2019, the conference website can be found <a href="SAMBa_Conf.html">here</a>.</li>
+					<li>I participated in SAMBa's 11th ITT in January 2020</li>
+				</ul>
+            </p>
+        </div>
+        <div class="w3-third w3-container">
+            <p class="w3-padding-large w3-padding-64 w3-center">
+                <img src="Images/SAMBaFacePhoto2017.jpg" title="WGPhoto" alt="" style="width:128; height:auto;" />
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="PersonalInfo">Personal Information</h1>
+            <dl>
+                <dt>Full Name: </dt> <dd>Mr William Graham</dd>
+                <dt>Department: </dt> <dd>Dept. of Mathematical Sciences</dd>
+                <dt>Program of Study: </dt> <dd>Integrated PhD Statistical Applied Mathematics (SAMBa CDT)</dd>
+                <dt>Previous Education: </dt>
+                    <dd>MSci Mathematics and Physics;
+                    <br />University of Bath, Dept. of Physics
+                    <br />Graduated Summer 2017 (First Class)
+                    </dd>
+                <dt>E-mail Address: </dt> <dd><a href="mailto:wg270@bath.ac.uk">wg270 &ltat&gt bath.ac.uk</a></dd>
+                <dt>Postal Address: </dt>
+				<dd>
+					<address>
+						Mr Will Graham
+						<br />Dept. of Mathematical Sciences
+						<br />University of Bath
+						<br />Bath
+						<br />BA2 7AY
+						<br />United Kingdom
+        			</address>
+				</dd>
+            </dl>
+        </div>
+    </div>
+
+    <footer id="myFooter">
+        <div class="w3-container w3-theme-l2">
+            <p>
+                <a href="http://www.bath.ac.uk/" target="_blank">University of Bath</a> Home Page.
+      	         <br />EPSRC Centre for Doctorial Training in Statistical Applied Mathematics <a href="http://www.bath.ac.uk/math-sci/postgraduate/samba/" target="_blank">(SAMBa)</a>
+            </p>
+        </div>
+
+        <div class="w3-container w3-theme-l1">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+    </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Generate the navigation bar
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                    /*remove the attribute, and call this function once more:*/
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+        }
+    }
+};
+includeHTML();
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

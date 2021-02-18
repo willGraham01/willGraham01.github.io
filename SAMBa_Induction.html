@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>SAMBa Induction Programming, 2020</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Suplimentary_style.css">
+
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body>
+
+<!-- Navbar, generated from script at bottom of page -->
+<div w3-include-html="navbar.html"></div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu"><i class="fa fa-remove"></i></a>
+    <h4 class="w3-bar-item"><b>Page Navigation</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Introduction">Introduction</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Python">Python</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#MATLAB">MATLAB</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#RLanguage">R</a>
+	<a class="w3-bar-item w3-button w3-hover-black" href="#LaTeX">LaTeX</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#About">About and License</a>
+	<div w3-include-html="sidebarSuppliment.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="Introduction">SAMBa Programming Induction, 2020</h1>
+            <p>
+                Welcome to the redirection page for <a href="http://www.bath.ac.uk/centres-for-doctoral-training/epsrc-centre-for-doctoral-training-in-statistical-applied-mathematics-samba/" target="_blank">SAMBa</a>'s programming training, held during the University of Bath's induction week 2020.
+                A core pillar of the training provided by SAMBa in the MRes year is to provide students with experience and familiarity with how computing is used to enhance or support mathematical research, which encompasses a wide range of applications and hence, languages.
+                As such, SAMBa provides a short, self-paced introductory course for each of the langauges that students are expected to use at some point during their MRes year (and most likely, during the PhD).
+                This material is produced, organised, and maintained by SAMBa students who are currently in the PhD years of their time at SAMBa; and is reviewed each year to ensure that changes to the SAMBa program are reflected in the training that is provided.
+                Unlike more general courses in programming, these courses provide a background that leans heavily on the techniques that a student will be expected to employ whilst using each language: the MATLAB course focuses on array manipulation, efficient programming, and iterative methods, for example, because this encompasses the ways in which MATLAB is employed in the repective MRes units.
+            </p>
+            <p>
+                Prior to joining SAMBa, you will have recieved worksheets designed to test your ability in four programming languages that are frequently used in the MRes year of the CDT course, the postgraduate MSc course, and in the wider scientific and industrial communities.
+                The purpose of this induction session is for you to work at your own pace, on the language of your choosing - of course, we recommend you work through the languages you are least familiar with!
+                If you were able to complete the worksheet for a particular language, there is no need to look over the training course we provide for that language, because you already have enough familiarity with it.
+                Otherwise, there will be student demonstrators on-hand to answer any questions you come across whist working through the material - below is a table detailing everyone's expertise.
+			</p>
+        </div>
+    </div>
+    <div class="w3-row">
+        <table class="w3-table w3-striped w3-border w3-bordered" style="table-layout:fixed; width:50%; margin-left:auto; margin-right:auto">
+            <colgroup>
+                <col span="1" style="width:auto">
+                <col span="1" style="width:15%">
+                <col span="1" style="width:15%">
+                <col span="1" style="width:15%">
+                <col span="1" style="width:15%">
+            </colgroup>
+            <tr>
+                <th>Demonstrator</th>
+                <th class="w3-center">Python</th>
+                <th class="w3-center">MATLAB</th>
+                <th class="w3-center">R</th>
+                <th class="w3-center">LaTeX</th>
+            </tr>
+            <tr>
+                <td>Will <i>"Wiggles"</i> Graham</td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Cross.png" alt="No" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+            </tr>
+            <tr>
+                <td>Allen <i>"Not Will"</i> Hart</td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Cross.png" alt="No" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+            </tr>
+            <tr>
+                <td>Teo <i>"R"</i> Deveney</td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+            </tr>
+            <tr>
+                <td>Katie Phillips</td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Cross.png" alt="No" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+            </tr>
+            <tr>
+                <td>Margaret Duff</td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Cross.png" alt="No" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+            </tr>
+            <tr>
+                <td>Shahzeb Raja Noureen</td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Cross.png" alt="No" width="auto" height="20px"></td>
+                <td class="w3-center"><img src="Images/Tick.png" alt="Yes" width="auto" height="20px"></td>
+            </tr>
+        </table>
+        <p style="text-align:center">
+            Once you are ready to begin, either scroll down or follow the links below to your chosen programming language.
+        </p>
+        <p style="font-size:25px; text-align:center">
+            <a class="w3-bar-item w3-button w3-hover-black" href="#Python">Python</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="#MATLAB">MATLAB</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="#RLanguage">R</a>
+            <a class="w3-bar-item w3-button w3-hover-black" href="#LaTeX">LaTeX</a>
+        </p>
+	</div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h3 class="w3-text-teal">Reminder: Before you begin</h3>
+            <p>
+                You will have recieved instructions detailing how to join the programming session prior to the beginning of welcome/induction week.
+                In particular, it is important that you have completed registration online and activated your Bath account, and have signed into Microsoft Teams and joined the "SAMBa Induction Programming Session" team.
+                You should have been sent the team code to allow you to join already.
+                For those of you who cannot activate your Bath accounts on time, please make sure you have created a Microsoft account, and then joined the "SAMBa Induction Programming Session" team in the same way - you will only be able to join as a guest, but will have access to all the functionality that you need for the programming session.
+                <br />
+                <br />
+                If there are any questions or concerns, please contact me via email (which can be found on <a href="index.html">this page</a>).
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <div class="w3-row">
+                <img src="https://www.python.org/static/img/python-logo.png" alt="Python Logo" style="width:auto; height:100px" id="Python">
+            </div>
+            <p>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_python/00_schedule.html" target="_blank">Course</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_python/worksheet/01_python.html" target="_blank">Worksheet</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_python/worksheet/01_python-soln.html" target="_blank">Worksheet (solutions)</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://www.python.org/" target="_blank">Language Website</a>
+            </p>
+            <p>
+                Python is a widely-used, open-source, multi-purpose programming language that has seen it's popularity boom over the recent decade.
+                It now boasts a large number of additional modules to enrich it's base utility, an active developer- and user-community, and an easy-to-read syntax complimented by an extensive documentation.
+                If you are installing Python for the first time, we recommend you install <a href="https://www.anaconda.com/products/individual" target="_blank">Anaconda</a>, as this comes with an easy-to-use package manager, and several important packages pre-installed - including the <a href="https://jupyter.org/" target="_blank">Jupyer Notebook</a> and <a href="https://www.spyder-ide.org/" target="_blank">Spyder</a> editing programs.
+                Those more familiar with the command line or terminal might consider <a href="https://docs.conda.io/en/latest/" target="_blank">Conda</a> instead (which does away with the graphical interface).
+        	</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <div class="w3-row">
+                <img src="https://uk.mathworks.com/company/newsletters/articles/the-mathworks-logo-is-an-eigenfunction-of-the-wave-equation/_jcr_content/mainParsys/image_2.adapt.480.high.gif/1469941373397.gif" alt="MATLAB Logo" style="width:auto; height:100px" align="left" id="MATLAB">
+                <p style="font-size:30px">
+                    MATLAB
+                </p>
+            </div>
+            <p>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_matlab/00_schedule.html" target="_blank">Course</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_matlab/worksheet/01_matlab.html" target="_blank">Worksheet</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_matlab/worksheet/01_matlab-soln.html" target="_blank">Worksheet (solutions)</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://www.mathworks.com/products/matlab.html" target="_blank">Language Website</a>
+            </p>
+            <p>
+                MATLAB is a language built around handling vectors, matricies, and more generally arrays in a mathemtically-intuitive way.
+                It offers a simplistic and easy implimentation of iterative methods, powerful graphical outputs, and intuitive (from a mathematical standpoint) formulae and code structure.
+                Installing MATLAB requires a license, either academic or personal, so unless you have a copy installed on your personal machine the best way to access MATLAB is through the <a href="https://www.bath.ac.uk/guides/work-remotely-with-uniapps-and-unidesk/" target="_blank">University of Bath remote desktop (or remote application) program</a>.
+        	</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <div class="w3-row">
+                <img src="https://www.r-project.org/Rlogo.png" alt="R Logo" style="width:auto; height:100px" id="RLanguage">
+            </div>
+            <p>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_r/00_schedule.html" target="_blank">Course</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_r/worksheet/01_r_worksheet.html" target="_blank">Worksheet</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_r/worksheet/01_r_worksheet-soln.html" target="_blank">Worksheet (solutions)</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://www.r-project.org/about.html" target="_blank">Language Website</a>
+            </p>
+            <p>
+                R is a language that is prolific in statistical applicaitons.
+                As this suggests; it provides a wide variety of statistical techniques like linear/nonlinear modelling, statistical tests, and time-series analysis.
+                It's graphical techniques and markdown capabilities make it possible to produce publication-ready graphics, or even technical code documentation, complete with examples.
+                Whilst die-hard statisticians may insist that R is perfect the way it is and nothing else is needed, we recommend that you also also install <a href="https://rstudio.com/" target="_blank">RStudio</a> if you are new to R (or even if you are experienced and have never tried it), just so that the interface is a bit friendlier.
+        	</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <div class="w3-row">
+                <img src="https://www.latex-project.org/img/latex-project-logo.svg" alt="LaTeX Logo" style="width:auto; height:100px" id="LaTeX">
+            </div>
+            <p>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_latex/00_schedule.html" target="_blank">Course</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_latex/worksheet/01_latex.html" target="_blank">Worksheet</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://jdbetteridge.github.io/samba_induction_latex/worksheet/01_latex-soln.html" target="_blank">Worksheet (solutions)</a>
+                <a class="w3-bar-item w3-button w3-hover-black" href="https://www.latex-project.org/" target="_blank">Language Website</a>
+            </p>
+            <p>
+        		Given that you will eventually have to write a maths-heavy thesis, and will probably write several reports and papers along the way, you're going to want to streamline the process of actually formatting your work into documents.
+        		Enter LaTeX; a typesetting system, specifically designed for scientific writing.
+				It is freely available and has many editors, both downloadable and online, which come ready-to-use and even include document templates.
+				Editors can appear confusing at first, but each editor will have a fairly similar layout and it's own documentation.
+                Our course recommends <a href="https://www.overleaf.com/" target="_blank">Overleaf</a> (an online LaTeX editor), but <a href="https://www.xm1math.net/texmaker/" target="_blank">TeXMaker</a> is also a good first choice if you've never worked with LaTeX before and would like to use an offline editor.
+        	</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="About">About and License</h1>
+            <p>
+                The material in these courses was gathered, developed, and is maintained by SAMBa students.
+                Each course has a repository hosted on GitHub which details each year's contributors to the courses;
+                <ul>
+                    <li><a href="https://github.com/JDBetteridge/samba_induction_python" target="_blank">Python</a></li>
+                    <li><a href="https://github.com/JDBetteridge/samba_induction_matlab" target="_blank">MATLAB</a></li>
+                    <li><a href="https://github.com/JDBetteridge/samba_induction_r" target="_blank">R</a></li>
+                    <li><a href="https://github.com/JDBetteridge/samba_induction_latex" target="_blank">LaTeX</a></li>
+                </ul>
+            </p>
+            <div class="w3-row">
+                <p>
+                    &copy 2019 Jack Betteridge and James Grant.
+                    <a href="https://github.com/JDBetteridge/nbfancy" target="_blank"><img class="w3-padding" src="https://raw.githubusercontent.com/JDBetteridge/nbfancy/master/nbfancy/nbfancylogo.png" alt="NBFancy Logo" align="left" height="60px" width="auto"></a>
+                    <br />The format, appearence, and development of these resources makes use of <a href="https://github.com/JDBetteridge/nbfancy" target="_blank">NBFancy</a>; which is subject to the above copyright.
+                    Further information can be <a href="https://github.com/JDBetteridge/nbfancy" target="_blank">found here</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="w3-container w3-theme-l1">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+    </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Generate the navigation bar
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                    /*remove the attribute, and call this function once more:*/
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+        }
+    }
+};
+includeHTML();
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

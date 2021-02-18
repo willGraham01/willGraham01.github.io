@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>SLS Semester 1</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Suplimentary_style.css">
+
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body>
+
+<!-- Navbar, generated from script at bottom of page -->
+<div w3-include-html="navbar.html"></div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu"><i class="fa fa-remove"></i></a>
+    <h4 class="w3-bar-item"><b>Page Navigation</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="slsTimetable17-18.html">Timetable</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Times">Times and Places</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Resources">Resources</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#ITT7Info">ITT7 Information</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#Contacts">Student Contacts</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#OtherSeminars">Other Seminars</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="SLS_Sem2.html">Semester 2</a>
+	<div w3-include-html="sidebarSuppliment.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <!--Allow switching between semester 1 and 2, ITT7 and 8 -->
+    <div class="w3-center w3-padding-64">
+        <div class="w3-bar">
+            <a class="w3-button w3-black" href="SLS_Sem1.html">SLS Semester 1 2017/18</a>
+            <a class="w3-button w3-hover-black" href="ITT7.html">ITT 7</a>
+            <a class="w3-button w3-hover-black" href="SLS_Sem2.html">SLS Semester 2 2017/18</a>
+            <a class="w3-button w3-hover-black" href="ITT8.html">ITT 8</a>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="Times">Scheduled Times and Places</h1>
+            <p>
+                The SLS has three scheduled timeslots a week. To find out what is taking place in each session, see the <a href="slsTimetable17-18.html" target="_blank">timetable</a>.
+                <ul>
+                    <li>Wednesday, 10:15-12:15, CB4.7</li>
+                    <li>Thursday, 13:15-15:15, CB4.9</li>
+                    <li>Friday, 14:15-15:15, CB4.7</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="Resources">SLS Resources</h1>
+            <p>
+        		Resources used in SLS sessions will be accessible from here. This will include any presentations produced for SLS sessions; or materials such as papers for viewing before a session.
+        		<ul>
+        			<li>
+        				Paul Rohrbach's introduction to python talk; 26/10/17, can be accessed <a href="Resources/PRPython.pdf">here(.pdf)</a> and <a href="Resources/PRPython.ipynb">here(.ipynb)</a>.
+        			</li>
+        			<li>
+        				Slides from NPL's visit, containg outlines for the industrial problems are available <a href="Resources/PeterNPLDataScience.pdf">here (NPL and Data Science)</a> and <a href="Resources/AlistairSpectralSourcesDistributions.pdf">here (Spectral Analysis, Source Diagnostics, Summarising Distributions)</a>
+        			</li>
+        			<li>
+        				The slides outlining the problems presented by the Environment Agency can be found <a href="Resources/EAProblemOutlines.pptx">here</a>, and where to obtain data can be found <a href="Resources/EASpatialData.pptx">here</a>. In addition, Alex Cox's notes that look at the NVZ problem from a Fluid Dynamics perspective can be found <a href="Resources/ACoxNVZModelling.pdf">here</a>.
+        			</li>
+        			<li>
+        				Emiko Dupont's introduction to Gaussian processes and Kriging can be found <a href="Resources/EmikoGPPresentation.pdf">here</a>.
+        			</li>
+        	</ul>
+        	</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="ITT7Info">ITT7 Information</h1>
+            <p>
+                ITT7 will take place between Monday 29th January and Friday 2nd February, at the <a href="https://brlsi.org" target="_blank">BRLSI</a> in Bath City Centre. The industrial partners for the ITT are National Physical Laboratory and the Environment Agency.
+                <ul>
+                    <li>
+		                <a href="http://www.npl.co.uk/" target="_blank">National Physics Laboratory</a>:
+		                <q><i>The National Physical Laboratory (NPL) is the UK's National Measurement Institute, and is a world-leading centre of excellence in developing and applying the most accurate measurement standards, science and technology available.</i></q> - Taken from the <q>What Is NPL?</q> page, 23/10/17.
+		            </li>
+                    <li>
+		                <a href="https://www.gov.uk/government/organisations/environment-agency" target="_blank">Environment Agency</a>:
+		                <q>[The Environment Agency] <i>were established in 1996 to protect and improve the environment. Within England</i> [they're] <i>responsible for: regulating major industry and waste, treatment of contaminated land, water quality and resources, fisheries, inland river, estuary and harbour navigations, conservation and ecology.</i> [They] <i>are also responsible for managing the risk of flooding from main rivers, reservoirs, estuaries and the sea.</i></q> - Taken from the <q>About Us</q> page, 23/10/17.
+		            </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="Contacts">Student Contacts</h1>
+            <p>
+        		Please note, the SLS has concluded for Semester 1 2017-18.
+        		<ul>
+        			<li>SLS Co-ordinators:
+        				<ul>
+        					<li>Teo Deveney (<a href="mailto:T.J.Deveney@bath.ac.uk">T.J.Deveney@bath.ac.uk</a>)</li>
+        					<li>William Graham (<a href="mailto:W.Graham@bath.ac.uk">W.Graham@bath.ac.uk</a>)</li>
+        				</ul>
+        			</li>
+        			<li>National Physics Laboratory: Lizhi Zhang (<a href="mailto:L.Zhang@bath.ac.uk">L.Zhang@bath.ac.uk</a>)</li>
+        			<li>Environment Agency: Eleanor Barry (<a href="mailto:E.V.H.Barry@bath.ac.uk">E.V.H.Barry@bath.ac.uk</a>)</li>
+        		</ul>
+        	</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal" id="OtherSeminars">Other Seminars</h1>
+            <p>
+        		In the event that an SLS session is unused, there are a number of other seminar series that are well worth attending. These include:
+        		<ul>
+        			<li>
+        				<a href="http://people.bath.ac.uk/br275/PSS/">Postgraduate Seminar Series (PSS)</a>, Thursdays 10:15, 4W1.7
+        			</li>
+        			<li>
+        				<a href="http://people.bath.ac.uk/jdb55/SNARGSS/">SNARGSS</a>, (Fortnightly) Thursdays 13:15, 4W1.7
+        			</li>
+        			<li>
+        				<a href="http://people.bath.ac.uk/masgks/Landscapes/">Landscapes Colloquium</a>, Fridays 15:15 4W1.7
+        			</li>
+        		</ul>
+        	</p>
+        </div>
+    </div>
+
+    <footer id="myFooter">
+        <div class="w3-container w3-theme-l2">
+            <p>
+      	        EPSRC Centre for Doctorial Training in Statistical Applied Mathematics <a href="http://www.bath.ac.uk/math-sci/postgraduate/samba/">(SAMBa)</a>
+            </p>
+        </div>
+
+        <div class="w3-container w3-theme-l1">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+    </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Generate the navigation bar
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                    /*remove the attribute, and call this function once more:*/
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+        }
+    }
+};
+includeHTML();
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

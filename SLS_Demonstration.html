@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!--
+This is a comment - be careful because comments cannot be nested!
+-->
+
+<html>
+
+<!--
+HTML elements are specified using a key (a letter or phrase normally) and using <>
+The <html> element tells the interpreter that it should read everything here as HTML code.
+-->
+
+<title>SLS Demonstration 2019</title>
+<!-- The <title> element specifies the name of the webpage as it appears in your web-brower's tabs -->
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="SLS_Demonstration_Style.css">
+<!-- A stylesheet can be used to set formatting across multiple files, the way to link a .html file to a stylesheet is via the <link> element -->
+
+
+<!--
+The <body> element is everything that actually gets placed on the webpage - you can think of it as the equivalent of \begin{document} in a .tex file. Everything before the <body> is the metadata, which is essentially equivalent to the preamble of a .tex file.
+-->
+<body>
+
+<!-- The <h#> element defines a heading, where you replace # with a number 1-5 -->
+<h1> What is this page? </h1>
+<p>
+	This page serves as a demonstration for writing websites using basic HTML functionality, demonstrated in SLS Wed 16th October, 2019.
+	<br />You can <q>view source</q> of this page to see the underlying HTML file. 
+	Note that you won't be able to see the .css file, so you'll need to use <a href="SLS_Demonstration_Style.css", target="_blank">this link</a> to view it.
+	Demonstrated on this page are:
+	<ul>
+		<li>Some basic text formatting</li>
+		<li>Headings and paragraphs</li>
+		<li>Images</li>
+		<li>Un-ordered lists</li>
+		<li>Tables</li>
+		<li>Links</li>
+		<li>Footers</li>
+	</ul>
+	Although if anyone wants more information or to learn more about HTML, consider looking at the content on <a href="http://www.w3schools.com/html" target="_blank">w3schools</a>, who also provide very detailed tutorials on most of what HTML and CSS has to offer.
+</p>
+
+<p>
+	Let's start with headings and paragraph elements.
+</p>
+<h1> This is a big header </h1>
+<h2> Then a smaller header </h2>
+<h3> And a smaller one still </h3>
+<h4> Getting quite small now </h4>
+<h5> Stop pushing your luck </h5>
+<p>
+	This is a paragraph.
+	Within a paragraph you can use various elements to change the appearance of text; for example give <b>emphasis</b> to certain words or phrases, <i>draw attention</i> to keywords using italics, or <u>underline</u> words, which you might also want to do in your headings.
+	You can also change the <font color="blue">mid-sentence</font> if you want, or the actual font that your text is rendered in.
+	<br />Newlines in the HTML source file are not rendered, you need to use the break element to force a newline to be displayed.
+	If you want your entire paragraph to have the same formatting, for example you want your paragraph to have red text and be in courier font throughout, you can edit the <i>style</i> attributes of that element.
+	Have a look at the source code of the paragraph below to see what I mean.
+</p>
+
+<p style="color:blue; font-family:courier; font-size:75%; text-align:center; background-color:gray;">
+	This paragraph is formatted differently to the others.
+	This is because when I specified the element, I changed some of it's styles from the defaults.
+	This can be useful if you only have a few paragraphs that require different formatting, but in general you'll want to use a <i>style sheet</i> to standardise the appearence of your elements.
+</p>
+<p>
+	I'm now going to list some of the attributes that a paragraph's style can have, using an unordered list:
+	<ul>
+		<li>color: for font colour (damned americanisation). Either give a colour keyword, or a hex code</li>
+		<li>font-family: font of this paragraph</li>
+		<li>background-color: gives a block background colour to this paragraph</li>
+		<li>font-size: either an amount in pixels (px) or as a percentage of the default body text size</li>
+		<li>text-align: alignment of text; either left, right, or center.</li>
+	</ul>
+	This is a non-exhaustive list, and a google search will allow you to find all the other attributes that you can play around with.
+</p>
+
+<h3> Images and Links </h3>
+<p>
+	You can add images and links to your webpage using two further elements.
+	You will need to know either the directory and filename of what you are linking to (for example, if you are linking to another page on your website or to an image stored in your <i>public_html</i> folder); or the web address of the target if linking to something online (like an external page).
+	You can also link to documents and other file types, using the same syntax.
+	If you want links to open in a new tab, you need to add the <i>target</i> attribute to your link elements.
+	<br />For example:
+	<ul>
+		<li><a href="index.html">You can go to my homepage</a>, which is stored in the same place as this webpage. The file is called <q>index.html</a>.</li>
+		<li><a href="index.html" target="_blank">You can go to my homepage</a> again, but this time it will open in a new tab.
+		<li><a href="Analysis1A/2019-20_Analysis1A_wk2.pdf">You can one of my tutorial notes</a> files, which will prompt your browser to download the file.</li>
+		<li><a href="https://www.bath.ac.uk/centres-for-doctoral-training/epsrc-centre-for-doctoral-training-in-statistical-applied-mathematics-samba/" target="_blank">You can go to the SAMBa website</a>, in a new tab. Notice how you need the <q>http://</q> in the web address!</li>
+	</ul>
+	As for images; here's one that I have stored in my public_html folder for you all to bask at:
+	<br />
+	<img src="Images/SAMBaFacePhoto2017.jpg" title="WGPhoto" alt="Some alternative text if the image won't load." style="width:128px; height:auto;" />
+	<br />The <q>src</q> atribute is the source of the image (file location or external web address), the title just the internal name the page uses for it, <q>alt</q> is the text that will be displayed on the webpage if your image can't be found.
+	The height and width styles are as you would expect; the keyword <q>auto</q> can be used to keep the aspect ratio of the original image, or you can input a size in pixels or as a percentage of the original image dimensions.
+</p>
+
+<h3> Tables </h3>
+<p>
+	Finally, let's talk about tables - useful for designing schedules, like that for SLS maybe?
+	Tables have their own element, as well as elements to specify new rows, columns, and headings.
+</p>
+
+<!-- <table class="timetable"> -->
+<table>
+	<!--First table row, headings and room places-->
+	<tr> 
+		<th>
+			Time Slot
+		</th>
+		<td>
+			9:15-10:15
+		</td>
+		<td>
+			10:15-11:15
+		</td>
+		<td>
+			11:15-12:15
+		</td>
+	</tr>
+	<!--Second table row-->
+	<tr>
+		<th>
+			Wednesday
+		</th>
+		<td>Get to campus</td>
+		<td>Listen to super exciting talk</td>
+		<td>Be sad that super exciting talk has ended</td>
+	</tr>
+	<tr>
+		<th>
+			Thursday
+		</th>
+		<td>Attempt to make amazing website, because you were inspired by the talk.</td>
+		<td>Attend PSS to advertise your website.</td>
+		<td>Wait for website hits to grow exponentially.</td>
+	</tr>
+	<!-- You can add more rows and columns by adding extra elements - just make sure your table isn't lopsided by the end of it! -->
+</table>
+<p>
+	Notice how this table doesn't look every fancy, so we will need to add some styling to it.
+	We could do all this by editing the style attribute of the table above, but a much better idea for us will be to use a Cascading Style Sheet (.css) to define our own <i>class</i> of table, and then link this table to that class!
+	<br />You can view this style sheet using the link at the top of the page.
+</p>
+
+<p>
+	As an asside, there's also a footer element so that you can sign off on your webpage.
+</p>
+<footer>
+This is my footer; it just says that <a href="index.html">Will Graham</a> made this webpage.
+</footer>
+
+</body>
+<!-- This tag closes the body, or ends the webpage content that is visible. -->
+
+</html>
+<!-- Now we end the file itself -->
