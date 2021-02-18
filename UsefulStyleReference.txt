@@ -1,0 +1,8 @@
+w3css documentation:
+https://www.w3schools.com/w3css/default.asp
+
+Font Awesome (fa) styles:
+https://www.w3schools.com/icons/fontawesome5_icons_education.asp
+
+Font Awesome site and kit for website:
+https://fontawesome.com/kits/d83cef34cd/use
