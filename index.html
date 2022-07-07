@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 <link rel="stylesheet" href="Suplimentary_style.css">
@@ -15,62 +16,69 @@
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 </style>
 
+<!-- Link to fontawesome to enable icons -->
 <head>
     <script src="https://kit.fontawesome.com/d83cef34cd.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<!-- Site actually begins -->
+<body class="w3-black">
 
-<!-- Navbar, generated from script at bottom of page -->
-<div class="w3-container w3-padding">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
     <div w3-include-html="navbar.html"></div>
+</nav>
+<!-- Top menu on small screens to bring up sidebar -->
+<header class="w3-container w3-top w3-hide-large w3-dark-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-dark-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span>William Graham</span>
+</header>
+
+<!-- PAGE CONTENT -->
+<div class="w3-main" style="margin-left:340px; margin-right:40px">
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="whoami">
+        <h1 class="w3-xxlarge"><b>Who Am I?</b></h1>
+        <hr style="width:75%;border:5px solid grey" class="w3-round">
+    </div>
+    <div class="w3-container">
+        <p class="w3-large">
+            I am a PhD student at the University of Bath - part of cohort 4 of the <a href="https://www.bath.ac.uk/centres-for-doctoral-training/epsrc-centre-for-doctoral-training-in-statistical-applied-mathematics-samba/" class="w3-hover-opacity" target="_blank">SAMBa</a> CDT.
+            I have submitted my thesis and am awaiting my viva, and will be starting as a Research Software Developer at University College London in July.
+        </p>
+        <p class="w3-large">
+            You can use the links to the side (or below) to learn more about:
+            <ul class="w3-large">
+                <li>My <a href="./biography.html" class="w3-hover-opacity" target="_blank">education and skillset</a></li>
+                <li>My <a href="./teaching.html" class="w3-hover-opacity" target="_blank">teaching experience</a></li>
+                <li>My <a href="./phd_research.html" class="w3-hover-opacity" target="_blank">PhD research</a></li>
+            </ul>
+        </p>
+        <p class="w3-large">
+            There's also my <a href="https://www.linkedin.com/in/will-graham-284395139" class="w3-hover-opacity">profile on LinkedIn</a> which may be of interest.
+        </p>
+    </div>
 </div>
 
-<!-- Page container -->
-<div class="w3-main w3-margin-top w3-padding-32">
-
-    <!-- Grid - forces footer to be below main body and left column -->
-    <div class="w3-row-padding">
-
-        <!-- Left Column -->
-        <div w3-include-html="WebsiteCommonLeft.html"></div>
-        <!-- End Left Column -->
-
-        <!--Right Column -->
-        <div class="w3-twothird w3-padding">
-            <div class="w3-white w3-text-grey">
-    			<p>
-                    I am a PhD student at the University of Bath, part of the EPSRC Centre for Dotorial Training in Statistical Applied Mathematics (SAMBa CDT).
-                    I'm also tutor for the Department of Mathematical Sciences, and a demonstrator for the Doctorial College at the Univeristy of Bath.
-                    My undergraduate degree and previous education was an integrated masters MSci Mathematics and Physics at the University of Bath.
-                    <br />
-                    <br />
-                    More information can be found <a href="biography.html">here</a>, or on my <a href="www.linkedin.com/in/will-graham-284395139" target="_blank">profile on LinkedIn</a>.
-    			</p>
-                <h4 class="w3-text-black">Research Area</h4>
-                <p>
-                    My research concerns the analysis of differential operators on functions defined on domains with empty interiors ("singular structures") and the analysis of their spectra.
-                    Such problems are motivated by a desire to understand how wave-guidance in thin waveguides is affected by the geometry of the waveguides design.
-                </p>
-    			<h4 class="w3-text-black">Publications and pre-prints</h4>
-    			<p>
-    				<ul>
-    				  <li>[With <a href="http://people.bath.ac.uk/kc525/" target="_blank">Kirill Cherednichenko</a>] &nbsp Frequency-dependent impedance and surface waves on the boundary of a stratified dielectric medium. [<a href="https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.2019.0218" target="_blank">PTRS Open Access</a>] &nbsp [<a href="https://arxiv.org/abs/1802.06921" target="_blank">arXiv</a>].</li>
-    				</ul>
-    			</p>
-            </div>
-        </div>
-
-    </div> <!--end Grid-->
-</div>
-
-<footer class="w3-container w3-light-grey w3-margin-top">
+<footer class="w3-container w3-dark-grey w3-margin-top">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 </body>
 
 <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
 // Generate the navigation bar
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
