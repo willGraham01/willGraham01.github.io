@@ -1,0 +1,6 @@
+remote_theme: pages-themes/tactile@v0.2.0 #https://github.com/pages-themes/tactile
+plugins:
+- jekyll-remote-theme
+
+title: William Graham, PhD
+description: Look, I'll be honest with you, I have no idea. But I'm sure we can find something worth your time!
