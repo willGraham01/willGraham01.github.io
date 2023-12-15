@@ -1,0 +1,9 @@
+toc:
+- title: Site Navigation
+  subfolderitems:
+    - page: Home
+      url: index
+    - page: PG2
+      url: foo
+    - page: PG3
+      url: bar
