@@ -28,7 +28,7 @@ github_username:  willGraham01
 github: [metadata]
 
 # Build settings
-remote_theme: pages-themes/midnight@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
