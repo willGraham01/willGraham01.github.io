@@ -1,7 +1,7 @@
 ---
 ---
 // Overwrite theme variables before import
-// https: //github.com/pages-themes/minimal/blob/master/_sass/jekyll-theme-minimal.scss
+// https://github.com/pages-themes/minimal/blob/master/_sass/jekyll-theme-minimal.scss
 
 // Import remote theme
 @import "{{ site.theme }}";
@@ -15,4 +15,8 @@ a:focus {
 
 .text-centre {
     text-align: center;
+}
+
+.rounded-image {
+    border-radius: 50%;
 }

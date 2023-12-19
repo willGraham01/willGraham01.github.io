@@ -19,15 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: William Graham, PhD
-email: 1willgraham@gmail.com  
-description: >- # this means to ignore newlines until "baseurl:"
-  Look I'll be honest with you, I have no idea. But I'm sure we can find something worth your time.
+email: 1willgraham@gmail.com 
+description: >-
+  Mathematician turned Research Software Developer.
 logo: assets/img/profile_picture.jpg
-
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  willGraham01
-github: [metadata]
+linkedin: https://www.linkedin.com/in/will-graham-284395139
+github:
+  is_project_page: True
 
 # Side of page navigation information
 sidebar:
