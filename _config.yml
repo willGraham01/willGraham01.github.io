@@ -35,8 +35,8 @@ sidebar:
     subfolderitems:
       - page: Home
         url: index
-      - page: PG2
-        url: foo
+      - page: PhD Research
+        url: phd
       - page: PG3
         url: bar
 
