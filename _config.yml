@@ -26,6 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  willGraham01
 github: [metadata]
+logo: assets/img/profile_picture.jpg
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
