@@ -39,6 +39,8 @@ sidebar:
         url: phd
       - page: Teaching Experience
         url: teaching
+      - page: Education & Skills
+        url: education
 
 # Build settings
 markdown: kramdown
