@@ -41,6 +41,29 @@
         {% endfor %}
     </div>
 
+    <!-- Internal page links, intended for sectioning -->
+    {% if page.internal-links %}
+    <div class="section">
+        <h3>On this page</h3>
+        <ul>
+            {% for entry in page.internal-links %}
+            <li><a href="#{{ entry.ref }}">{{ entry.display }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <!-- List external links from this page, if provided -->
+    {% if page.external-links %}
+    <div class=""section">
+        <h3>External Links</h3>
+        <ul>
+            {% for entry in page.external-links %}
+            <li><a href="{{ entry.url }}" target="_blank">{{ entry.display }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
     <!-- Other misc stuff -->
 </header>
 

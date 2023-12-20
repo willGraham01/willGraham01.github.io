@@ -37,10 +37,12 @@ sidebar:
         url: index
       - page: PhD Research
         url: phd
-      - page: PG3
-        url: bar
+      - page: Teaching Experience
+        url: teaching
 
 # Build settings
+markdown: kramdown
+mathjax: true # Use $$ for display, \( .. \) for inline
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed

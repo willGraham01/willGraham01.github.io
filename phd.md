@@ -17,10 +17,17 @@ talks:
         buc-xvi: http://buc.cimat.mx/node/46
         aoop: https://people.bath.ac.uk/kc525/Seminar/programme_current.html
         aims: https://wiki.bath.ac.uk/display/cnmseminar/AIMS+Seminars+2021-2022+Schedule
-
+internal-links:
+    - display: PhD Research
+      ref: phd-research
+    - display: Research Outputs
+      ref: research-outputs
+    - display: Funding
+      ref: funding
+external-links:
+    - display: SAMBA CDT
+      url: https://samba.ac.uk/
 ---
-
-# PhD Research
 
 My PhD research focused on the analysis of differential systems on singular structures; regions that have no area from the perspective of the space they are embedded in.
 Think of lines viewed in two dimensions, or a collection of planes in three dimensions.
@@ -37,7 +44,7 @@ We can also then look to extract information about the solutions (waves) on thes
 
 This information can then be interpreted as "close to" that which we would get for the corresponding thin material we started with originally.
 
-My supervisors for the project were Prof. Kirill Cherednichenko and Prof. David Bird.
+My supervisors for the project were [Prof. Kirill Cherednichenko]({{ page.thesis.kirill }}){:target="_blank"} and [Prof. David Bird]({{ page.thesis.david-bird }}){:target="_blank"}.
 
 ## Research Outputs
 
@@ -65,7 +72,6 @@ Doing so means we can borrow ideas from the theory of Quantum Graphs, essentiall
 In this talk I will discuss the treatment of these "singular-structures" motivated by photonic crystals, the Quantum Graph problems that they lead us to, and the tools we can employ to handle them.
 We will see that the Quantum Graph problems we obtain explicitly encode the geometry of the structure; and give us access to a tool that allows us (both analytically and numerically) to obtain information about the "band-gaps" of these structures.
 
-
 ### Adjacent Publications
 
 #### Frequency-dependent impedance and surface waves on the boundary of a stratified dielectric medium
@@ -77,10 +83,3 @@ We will see that the Quantum Graph problems we obtain explicitly encode the geom
 ## Funding
 
 I was supported by a scholarship from the EPSRC Centre for Doctoral Training in Statistical Applied Mathematics at Bath (SAMBa), under the project EP/L015684/1.
-
-## External Links
-
-- [EPSRC Centre for Doctoral Training in Statistical Applied Mathematics at Bath (SAMBA CDT)]({{ page.samba }}){:target="_blank"}
-- PhD Supervisors:
-  - [Prof. Kirill Cherednichenko]({{ page.thesis.kirill }}){:target="_blank"}
-  - [Prof. David Bird]({{ page.thesis.david-bird }}){:target="_blank"}
