@@ -1,0 +1,22 @@
+---
+---
+// Overwrite theme variables before import
+// https://github.com/pages-themes/minimal/blob/master/_sass/jekyll-theme-minimal.scss
+
+// Import remote theme
+@import "{{ site.theme }}";
+
+// Add own custom settings
+a:hover,
+a:focus {
+    color: rgb(1, 74, 110);
+    font-weight: inherit;
+}
+
+.text-centre {
+    text-align: center;
+}
+
+.rounded-image {
+    border-radius: 50%;
+}
